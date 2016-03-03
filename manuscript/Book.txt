@@ -1,1 +1,3 @@
-chapter1.txt
+Foreword.md
+substitution_ciphers.md
+randomness.md
