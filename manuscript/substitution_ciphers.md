@@ -61,8 +61,6 @@ The key technique for analyzing Caesar ciphers is frequency analysis. One counts
 the occurrences of each given letter, and assumes the distribution matches the
 English language. 
 
-![Distribution](images/English_letter_frequency_alphabetic.svg)
-
 Let us cipher a paragraph and see how this works.
 
 ```
@@ -85,26 +83,40 @@ IN THE CIPHERTEXT, AND THESE PATTERNS HAVE THE POTENTIAL TO BE EXPLOITED IN
 A CIPHERTEXT-ONLY ATTACK.
 ```
 
-~~~ python
->>> from collections import Counter
->>> f = open("wikipedia_paragraph.txt", "r").read()
->>> f2 = Counter(f)
->>> f2.most_common()
+#### Python 
+
+```
+from collections import Counter
+f = open("wikipedia_paragraph.txt", "r").read()
+f2 = Counter(f)
+f2.most_common()
+```
+
+Output:
+
+```
 [(' ', 156), ('E', 111), ('T', 88), ('A', 72), ('S', 63), ('N', 59), ('R', 59),
 ('I', 53), ('O', 47), ('H', 37), ('L', 33), ('C', 29), ('P', 21), (',', 20), ('G
 ', 20), ('F', 20), ('M', 19), ('U', 19), ('D', 18), ('\n', 17), ('Y', 13), ('.',
  8), ('X', 7), ('B', 6), ('Q', 6), ('V', 6), ('W', 4), ('K', 3), ('"', 2), ('1',
  2), (')', 1), ('(', 1), ('-', 1), ('2', 1), ('[', 1), ('Z', 1), (']', 1)]
-~~~
+```
 
-~~~ c#
+#### C#
+
+```
 int[] c = new int[(int)char.MaxValue];
-> string s = File.ReadAllText("wikipedia_paragraph.txt");
-> foreach(char t in s)
-.       c[(int)t]++;
-> for(int i = 0; i < (int)char.MaxValue; i++)
-.       if(c[i] > 0 && char.IsLetterOrDigit((char)i))
-.               Console.WriteLine($"Letter {(char)i} Frequency {c[i]}");
+string s = File.ReadAllText("wikipedia_paragraph.txt");
+foreach(char t in s)
+      c[(int)t]++;
+for(int i = 0; i < (int)char.MaxValue; i++)
+      if(c[i] > 0 && char.IsLetterOrDigit((char)i))
+              Console.WriteLine($"Letter {(char)i} Frequency {c[i]}");
+```
+
+Output:
+
+```
 Letter 1 Frequency 2
 Letter 2 Frequency 1
 Letter A Frequency 72
@@ -132,8 +144,7 @@ Letter W Frequency 4
 Letter X Frequency 7
 Letter Y Frequency 13
 Letter Z Frequency 1
-~~~
-
+```
 
 
 
