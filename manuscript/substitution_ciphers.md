@@ -31,6 +31,7 @@ We can map each letter to a number using [Figure](#fig:1.1).
 ```
 
 We then apply our key of {$$}n = 8{/$$}
+
 {$$}
 E(x) = (x + n) mod 26 \\
 D(x) = (x - n) mod 26
