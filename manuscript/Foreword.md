@@ -13,18 +13,37 @@ When more power is required, we will deploy our cracking applications on Azure.
 
 ## Frequently Asked Questions
 
-1. Why are you using Windows, and Microsoft? Are you a fan boy?
-Nope. My current job gives me an allowance on Microsoft Azure. I use it because
-it's free. 
+Q> ## Why are you using Windows, and Microsoft? Are you a fan boy?
+Q>
+Q> Nope. My current job gives me an allowance on Microsoft Azure. I use it because it's free. 
 
-1. Why are you using Visual Studio for the code?
-When I started writing this application, Visual Studio had the only
-implementation of C++'s coroutines. By the time you read this, coroutines are
-likely implemented in several compilers, but it took a long time to write this book
+Q> ## Why are you using Visual Studio for the code?
+Q>
+Q> When I started writing this application, Visual Studio had the only
+Q> implementation of C++'s coroutines. By the time you read this, coroutines are
+Q> likely implemented in several compilers, but it took a long time to write this book
 
-1. I think I could write the code better than you!
-Well, that wasn't a question, but awesome. I'm always trying to be better. Fork
-this book on github, and I'll happily merge your request.
+Q> ## I think I could write the code better than you!
+Q>
+Q> Well, that wasn't a question, but awesome. I'm always trying to be better. Fork
+Q> this book on github, and I'll happily merge your request.
 
-1. What are you drinking?
-Jameson.
+Q> ## What are you drinking?
+Q> 
+Q> Jameson.
+
+Q> ## What language do I need to know to read this?
+Q> 
+Q> This book believes in the right tool for the job, and programming languages
+Q> are just tools. Most code examples are provided in C# and Python, however
+Q> sometimes Scala or R will be used run running on Spark. A few modules are
+Q> implemented in C++, since it provides the most intuitive access of the plethora
+Q> of C language cryptographic libraries.
+
+Q> ## C# is a horrible language for prototyping. Why did you use that to compare with python's awesome REPL!?
+Q>
+Q> C# has a REPL too: csi
+Q> https://msdn.microsoft.com/en-us/magazine/mt614271.aspx
+
+
+
