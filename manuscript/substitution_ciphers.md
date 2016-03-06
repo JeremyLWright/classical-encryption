@@ -102,48 +102,25 @@ Output:
  2), (')', 1), ('(', 1), ('-', 1), ('2', 1), ('[', 1), ('Z', 1), (']', 1)]
 ```
 
-#### C#
+#### C\#
 
 ```
-int[] c = new int[(int)char.MaxValue];
 string s = File.ReadAllText("wikipedia_paragraph.txt");
-foreach(char t in s)
-      c[(int)t]++;
-for(int i = 0; i < (int)char.MaxValue; i++)
-      if(c[i] > 0 && char.IsLetterOrDigit((char)i))
-              Console.WriteLine($"Letter {(char)i} Frequency {c[i]}");
+Dictionary<char, int> count = s
+	.GroupBy( x => x )
+	.ToDictionary(x => x.Key, x => x.Count());
 ```
 
 Output:
 
 ```
-Letter 1 Frequency 2
-Letter 2 Frequency 1
-Letter A Frequency 72
-Letter B Frequency 6
-Letter C Frequency 29
-Letter D Frequency 18
-Letter E Frequency 111
-Letter F Frequency 20
-Letter G Frequency 20
-Letter H Frequency 37
-Letter I Frequency 53
-Letter K Frequency 3
-Letter L Frequency 33
-Letter M Frequency 19
-Letter N Frequency 59
-Letter O Frequency 47
-Letter P Frequency 21
-Letter Q Frequency 6
-Letter R Frequency 59
-Letter S Frequency 63
-Letter T Frequency 88
-Letter U Frequency 19
-Letter V Frequency 6
-Letter W Frequency 4
-Letter X Frequency 7
-Letter Y Frequency 13
-Letter Z Frequency 1
+Dictionary<char, int>(38) { { 'I', 53 }, { 'N', 59 }, { ' ', 156 }, { 'C', 29 },
+ { 'R', 59 }, { 'Y', 13 }, { 'P', 21 }, { 'T', 88 }, { 'A', 72 }, { 'L', 33 }, {
+ 'S', 63 }, { ',', 20 }, { 'F', 20 }, { 'E', 111 }, { 'Q', 6 }, { 'U', 19 }, { '
+H', 37 }, { 'D', 18 }, { 'O', 47 }, { '\r', 17 }, { '\n', 17 }, { 'G', 20 }, { '
+X', 7 }, { '.', 8 }, { 'M', 19 }, { 'B', 6 }, { 'K', 3 }, { 'V', 6 }, { 'W', 4 }
+, { 'Z', 1 }, { '(', 1 }, { ')', 1 }, { '[', 1 }, { '1', 2 }, { ']', 1 }, { '"',
+ 2 }, { '2', 1 }, { '-', 1 } }
 ```
 
 
