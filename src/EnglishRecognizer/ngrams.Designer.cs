@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EnglishRecodnizer {
+namespace EnglishRecognizer {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace EnglishRecodnizer {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("EnglishRecodnizer.ngrams", typeof(ngrams).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("EnglishRecognizer.ngrams", typeof(ngrams).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

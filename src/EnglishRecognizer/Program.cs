@@ -40,7 +40,7 @@ namespace EnglishRecodnizer
             l = 4; //for quadgrams
         }
 
-        double score
+        //double score
 
     }                                                                                         
 
