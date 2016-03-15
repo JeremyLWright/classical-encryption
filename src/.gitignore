@@ -1,1 +1,6 @@
 .vs
+ipch
+packages
+x64
+*.sdf
+*.opendb
