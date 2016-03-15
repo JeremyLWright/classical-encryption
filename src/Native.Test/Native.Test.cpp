@@ -5,17 +5,17 @@
 #include <catch/catch.hpp>
 #include <string>
 #include <iostream>
+#include <Ciphers/Ciphers.h>
 
-extern "C" int AddOne(int source);
-extern "C" char* CaesarCipher(const char* plaintext);
-
-TEST_CASE("Hello World")
+TEST_CASE("AddOne")
 {
-
 	auto r = AddOne(1);
 	REQUIRE(r == 2);
+}
 
+TEST_CASE("CaesarCipher_HelloWorld")
+{
 	auto ciphertext = std::string(CaesarCipher("Hello World"));
-	std::cout << ciphertext << '\n';
+//	std::cout << ciphertext << '\n';
 	REQUIRE(ciphertext == "UryybJbeyq");
 }
