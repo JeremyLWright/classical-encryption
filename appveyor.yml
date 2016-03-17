@@ -46,11 +46,11 @@ platform: x64
 
 # build Configuration, i.e. Debug, Release, etc.
 configuration: 
-    - Debug
-    - Release
+  - Debug
+  - Release
 
 build:
-  project: src\EnglishRecognizer.sln      # path to Visual Studio solution or project
+  project: src/EnglishRecognizer.sln      # path to Visual Studio solution or project
   publish_nuget: false             # package projects with .nuspec files and push to artifacts
 
   # MSBuild verbosity level
@@ -58,11 +58,11 @@ build:
 
 
 # scripts to run before build
-before_build:
+#before_build:
 #  - cd C:\projects\libwebp-net\Imazen.Test.WebP
 #  - nuget restore Imazen.Test.WebP.-PackageDirectory C:\projects\libwebp-net\packages
-  - cd src
-  - nuget restore 
+#  - cd src
+#  - nuget restore 
 
 # scripts to run after build
 #after_build:
