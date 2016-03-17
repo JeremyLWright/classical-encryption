@@ -59,9 +59,9 @@ build:
 
 # scripts to run before build
 before_build:
-  - pushd src
+  - cd src
   - nuget restore
-  - popd
+  - cd ..
 
 # scripts to run after build
 #after_build:
