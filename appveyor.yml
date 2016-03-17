@@ -50,18 +50,16 @@ configuration:
   - Release
 
 build:
-  project: src/EnglishRecognizer.sln      # path to Visual Studio solution or project
+  project: src\EnglishRecognizer.sln      # path to Visual Studio solution or project
   publish_nuget: false             # package projects with .nuspec files and push to artifacts
 
   # MSBuild verbosity level
-  verbosity: detailed
+  verbosity: normal
 
 
 # scripts to run before build
 before_build:
-  - cd src
-  - nuget restore
-  - cd ..
+  - nuget restore src\EnglishRecognizer.sln
 
 # scripts to run after build
 #after_build:
