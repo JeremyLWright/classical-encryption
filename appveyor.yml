@@ -6,7 +6,7 @@ version: 0.1.0.{build}
 assembly_info:
   patch: true
   file: AssemblyInfo.*
-  assembly_version: "0.2.0"
+  assembly_version: "0.1.{build}"
   assembly_file_version: "{version}"
   assembly_informational_version: "{version}"
 
@@ -58,11 +58,10 @@ build:
 
 
 # scripts to run before build
-#before_build:
-#  - cd C:\projects\libwebp-net\Imazen.Test.WebP
-#  - nuget restore Imazen.Test.WebP.-PackageDirectory C:\projects\libwebp-net\packages
-#  - cd src
-#  - nuget restore 
+before_build:
+  - pushd src
+  - nuget restore
+  - popd
 
 # scripts to run after build
 #after_build:
