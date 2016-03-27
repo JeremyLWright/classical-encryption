@@ -1,4 +1,5 @@
 Foreword.md
+enigma.md
 substitution_ciphers.md
 randomness.md
 biblography.md
