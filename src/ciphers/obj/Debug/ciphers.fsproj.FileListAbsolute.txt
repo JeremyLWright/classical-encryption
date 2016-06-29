@@ -1,0 +1,14 @@
+C:\source\classical-encryption\src\ciphers\bin\Debug\ciphers.XML
+C:\source\classical-encryption\src\ciphers\bin\Debug\ciphers.dll
+C:\source\classical-encryption\src\ciphers\bin\Debug\ciphers.pdb
+C:\source\classical-encryption\src\ciphers\bin\Debug\FSharp.Core.dll
+C:\source\classical-encryption\src\ciphers\bin\Debug\FsUnit.NUnit.dll
+C:\source\classical-encryption\src\ciphers\bin\Debug\NHamcrest.dll
+C:\source\classical-encryption\src\ciphers\bin\Debug\nunit.framework.dll
+C:\source\classical-encryption\src\ciphers\bin\Debug\FSharp.Core.xml
+C:\source\classical-encryption\src\ciphers\bin\Debug\FsUnit.NUnit.pdb
+C:\source\classical-encryption\src\ciphers\bin\Debug\FsUnit.NUnit.xml
+C:\source\classical-encryption\src\ciphers\bin\Debug\NHamcrest.pdb
+C:\source\classical-encryption\src\ciphers\bin\Debug\nunit.framework.xml
+C:\source\classical-encryption\src\ciphers\obj\Debug\ciphers.dll
+C:\source\classical-encryption\src\ciphers\obj\Debug\ciphers.pdb

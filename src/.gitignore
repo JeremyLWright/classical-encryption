@@ -4,3 +4,4 @@ packages
 x64
 *.sdf
 *.opendb
+*.VC.db
