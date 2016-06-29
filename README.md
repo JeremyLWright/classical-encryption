@@ -1,4 +1,4 @@
-Classical Cyrptography
+Classical Cryptography
 ----------------------
 [![Build status](https://ci.appveyor.com/api/projects/status/x2mtvifyeji0e9eb?svg=true)](https://ci.appveyor.com/project/JeremyLWright/classical-encryption)
 
@@ -13,4 +13,5 @@ goal of writing a book.
 https://leanpub.com/classical-cryptography/
 
 Sincerely,
+
 Jeremy Wright
