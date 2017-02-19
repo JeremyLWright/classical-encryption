@@ -1,5 +1,12 @@
 Foreword.md
-enigma.md
+Introduction.md
 substitution_ciphers.md
+transposition_cipher.md
+polyalphabetic_ciphers.md
+fractioning_ciphers.md
+digraph.md
+numeric_cipher.md
+machine.md
+enigma.md
 randomness.md
 biblography.md
