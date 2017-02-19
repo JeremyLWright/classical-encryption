@@ -1,10 +1,26 @@
-# Substitution Ciphers
+# Monoalphabetic Substitution Ciphers
 
 Substitution ciphers are the most simple ciphers. Essentially, a substitution
 cipher replaces a single letter with another. The mapping of cleartext letters
 to ciphertext letters does not change over the course of the message. Hence,
 substitution ciphers do not mask the letter frequency distribution, and this will
 be our first technique in cracking them.   
+
+## Atbash
+
+## Pigpen
+
+## Affine
+
+## Mixed Alphabet
+
+## Homophonic Substitution
+
+## Morse Code
+
+## Babbington Plot
+
+## Adventure of Dancing Men
 
 ## Caesar Cipher
 
